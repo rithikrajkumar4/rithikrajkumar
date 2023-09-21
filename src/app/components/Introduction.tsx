@@ -1,50 +1,38 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { AiFillStar } from "react-icons/ai";
 
 const Introduction = () => {
   return (
-    <div className="w-full h-[100vh] md:h-[60vh] md:flex justify-evenly items-center  md:rounded-full mr-2">
-      <div className="flex justify-center">
-        <div className="w-[400px] h-[400px] mt-20 md:mt-0 bg-green-400 rounded-full overflow-hidden bg-center ">
+    <div className="w-full h-[100%] xl:h-[70%] xl:flex xl:flex-row-reverse justify-between xl:p-20 mb-20">
+      <div className="flex justify-center pt-10 xl:pt-0">
+        <div className="w-[600px] h-[600px] mt-20 md:mt-0 blob bg-green-400  overflow-hidden bg-center ">
           <Image
-            className="hover:scale-125 scroll-smooth "
+            className="hover:scale-125"
             src={"/rrk1.png"}
-            width={400}
-            height={400}
+            width={600}
+            height={600}
             alt="me"
           />
         </div>
       </div>
-      <div className="text-center">
-        <div className="text-4xl uppercase font-sans">
-          <span className="font-bold ">
-            Hey,I am <span className=" text-green-600">Rithik Rajkumar</span>,
+      <div className="pt-20 text-center xl:text-left">
+        <div className="xl:text-7xl text-5xl  font-bold font-sans">
+          <span className="">
+            Hi,I&apos;m
+            <span className=" text-green-400 uppercase ">Rithik Rajkumar</span>,
           </span>
-          <br /> An Experienced Freelancer,
-          <br /> A Full-Stack Developer &
+          <br /> Full-Stack Developer &
           <br /> Creative Designer.
         </div>
-        <div className="flex gap-4 justify-center m-4">
-          <div className="flex items-center text-2xl font-mono">
-            <AiFillStar className="text-yellow-500" />
-            MERN
-          </div>
-          <div className="flex items-center text-2xl font-mono">
-            <AiFillStar className="text-yellow-500" />
-            NextJS
-          </div>
-          <div className="flex items-center text-2xl font-mono">
-            <AiFillStar className="text-yellow-500" />
-            CSS
-          </div>
-          <div className="flex items-center text-2xl font-mono">
-            <AiFillStar className="text-yellow-500" />
-            Flutter
-          </div>
+        <div className="xl:w-[70%] ">
+          <p className="mt-2 text-2xl">
+            I code solutions and design aesthetics that captivate,combining
+            technical prowess with an artistic touch to shape tomorrow's digital
+            landscape.
+          </p>
         </div>
-        <div className="flex gap-8 items-center justify-center">
+        <div className="flex gap-8 items-center mt-4 text-center justify-center xl:justify-start">
           <div className="w-[200px] hover:text-gray-600 font-bold h-16 pt-3 rounded-full text-xl font-sans border-4 border-black">
             <Link href={"https://cal.com/rithikrajkumar/15min"} target="_blank">
               Want to discuss?
@@ -56,9 +44,7 @@ const Introduction = () => {
             </Link>
           </div>
         </div>
-        {/* <TextCarousel title={"A Full-Stack Developer"} /> */}
       </div>
-      <div></div>
     </div>
   );
 };
