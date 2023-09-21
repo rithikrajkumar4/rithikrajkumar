@@ -5,11 +5,11 @@ import { AiFillStar } from "react-icons/ai";
 
 const Introduction = () => {
   return (
-    <div className="w-full h-[50vh] md:flex justify-evenly items-center bg-gray-100 rounded-full mr-2">
+    <div className="w-full h-[100vh] md:h-[60vh] md:flex justify-evenly items-center  md:rounded-full mr-2">
       <div className="flex justify-center">
-        <div className="w-[400px] h-[400px] bg-green-400 rounded-full overflow-hidden bg-center ">
+        <div className="w-[400px] h-[400px] mt-20 md:mt-0 bg-green-400 rounded-full overflow-hidden bg-center ">
           <Image
-            className="hover:scale-125 scroll-smooth"
+            className="hover:scale-125 scroll-smooth "
             src={"/rrk1.png"}
             width={400}
             height={400}
@@ -54,7 +54,9 @@ const Introduction = () => {
             </Link>
           </div>
         </div>
+        {/* <TextCarousel title={"A Full-Stack Developer"} /> */}
       </div>
+      <div></div>
     </div>
   );
 };

@@ -25,9 +25,8 @@ export default function Home() {
   return (
     <div>
       <Header />
-
       <Introduction />
-      <TextCarousel title={"A Full-Stack Developer"} />
+      <TextCarousel title="A Full-stack Developer" />
       <Services />
       <Portfolios />
       <Projects />

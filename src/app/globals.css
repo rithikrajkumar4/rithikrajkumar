@@ -37,7 +37,11 @@ body {
   background-color: gray;
   width: 50%;
 }
-
+.neonText {
+  color: #fff;
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa,
+    0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
+}
 /* The circles on the timeline */
 .container::after {
   content: "";
@@ -107,7 +111,7 @@ body {
 @media screen and (max-width: 600px) {
   /* Place the timelime to the left */
   .timeline::after {
-    left: 31px;
+    left: 21px;
   }
 
   /* Full-width containers */

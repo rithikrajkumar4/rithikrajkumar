@@ -26,12 +26,12 @@ const Services = () => {
             key={index}
             className="flex p-8 w-auto text-center bg-gray-200 rounded-lg"
           >
-            <MdOutlineMiscellaneousServices className="text-5xl animate-pulse text-green-900" />
-            <p className="text-4xl ml-4 font-mono ">{item}</p>
+            <MdOutlineMiscellaneousServices className="md:text-5xl text-4xl text-green-900" />
+            <p className="md:text-4xl text-2xl ml-4 font-mono ">{item}</p>
           </div>
         ))}
       </div>
-      <div className="flex flex-col justify-center items-center text-center mt-20 w-full font-serif text-4xl font-semibold">
+      <div className="flex flex-col justify-center items-center text-center mt-20 w-full font-serif md:text-4xl text-2xl font-semibold">
         Please Email me your query!
         <Link
           href="mailto: rithikrajkumar@gmail.com"
