@@ -35,10 +35,9 @@ const Portfolios = () => {
         <h1 className=" capitalize lg:w-[60%] p-4 font-sans text-2xl lg:text-3xl text-center font-semibold space-x-4 italic tracking-widest">
           <span className="text-4xl">🙏🏻</span>,I am a programming enthusiast and
           a Computer Science Engineering graduate in 2023. I have year of
-          experience in the web development field. Also open to learn new
-          technologies and to be up to date with my tech stack. I&apos;m a
-          full-stack developer with experience in various frontend/backend
-          frameworks.
+          experience in the web development field.Open to learn new technologies
+          and to be up to date with my tech stack. I&apos;m a full-stack
+          developer with experience in various frontend/backend frameworks.
         </h1>
         <p className="text-xl lg:text-2xl p-2 text-center capitalize font-mono lg:w-[60%]">
           Also,I binge watch anime 👒⚔🏴‍☠️🌊, music 💇🏿‍♂️ﾒ𝟶,love to play Chess ♟,like

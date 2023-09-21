@@ -7,7 +7,7 @@ const Header = () => {
       <div className="text-4xl font-bold font-mono text-green-400 p-2">
         <span>🇮🇳</span>RR.
       </div>
-      <div className="lg:flex gap-12 pt-2 text-2xl font-semibold font-mono">
+      <div className="lg:flex gap-12 pt-2 text-xl font-semibold font-mono">
         <div className="hover:bg-green-300 hover:rounded-full cursor-pointer p-2 hover:text-white">
           <Link href={"/"}>Home</Link>
         </div>

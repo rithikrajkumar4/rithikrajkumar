@@ -18,8 +18,10 @@ const Introduction = () => {
         </div>
       </div>
       <div className="text-center">
-        <div className="text-4xl uppercase font-serif">
-          Hey,I am <span className=" text-green-600">Rithik Rajkumar</span>,
+        <div className="text-4xl uppercase font-sans">
+          <span className="font-bold ">
+            Hey,I am <span className=" text-green-600">Rithik Rajkumar</span>,
+          </span>
           <br /> An Experienced Freelancer,
           <br /> A Full-Stack Developer &
           <br /> Creative Designer.
