@@ -31,7 +31,7 @@ const ResponsiveNavbar = () => {
         />
       </div>
       <div
-        className="absolute w-full text-center bg-green-100 left-1 top-[10%] hidden font-semibold "
+        className="absolute w-full text-center bg-green-100 left-1 top-[7%] hidden font-semibold "
         id="navigationText"
       >
         <div className="hover:bg-green-300  cursor-pointer p-2 border border-black rounded-xl  ">
