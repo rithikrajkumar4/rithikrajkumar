@@ -26,7 +26,7 @@ import {
 
 const Portfolios = () => {
   return (
-    <div className="mt-40" id="portfolio">
+    <div className="mt-40 scroll-smooth" id="portfolio">
       <HeadingCategory
         title="Portfolio"
         subtitle="This is my personal portfolio"

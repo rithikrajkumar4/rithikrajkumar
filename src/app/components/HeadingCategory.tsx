@@ -8,7 +8,7 @@ const HeadingCategory = ({
   subtitle: string;
 }) => {
   return (
-    <div className="" id="services">
+    <div className=" scroll-smooth" id="services">
       <div className="flex flex-col items-center">
         <h1 className="md:text-7xl text-5xl font-serif font-bold">
           <u className="">{title}.</u>

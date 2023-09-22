@@ -4,15 +4,15 @@ import Image from "next/image";
 
 const Introduction = () => {
   return (
-    <div className="w-full h-[100%] xl:h-[70%] xl:flex xl:flex-row-reverse justify-between xl:p-20 mb-20">
+    <div className="w-full h-full xl:h-[70%] xl:flex xl:flex-row-reverse justify-center xl:p-20 mb-20 scroll-smooth">
       <div className="flex justify-center pt-10 xl:pt-0">
-        <div className="w-[600px] h-[600px] mt-20 md:mt-0 blob bg-green-400  overflow-hidden bg-center ">
+        <div className="w-auto h-auto mt-20 xl:mt-0 blob bg-green-400  overflow-hidden bg-center ">
           <Image
-            className="hover:scale-125"
+            className="hover:scale-125 content-center ml-4 mt-4"
             src={"/rrk1.png"}
             width={600}
             height={600}
-            alt="me"
+            alt="my image"
           />
         </div>
       </div>
@@ -28,8 +28,8 @@ const Introduction = () => {
         <div className="xl:w-[70%] ">
           <p className="mt-2 text-2xl">
             I code solutions and design aesthetics that captivate,combining
-            technical prowess with an artistic touch to shape tomorrow's digital
-            landscape.
+            technical prowess with an artistic touch to shape tomorrow&apos;s
+            digital landscape.
           </p>
         </div>
         <div className="flex gap-8 items-center mt-4 text-center justify-center xl:justify-start">

@@ -15,7 +15,7 @@ const Services = () => {
     "Product Landing Website",
   ];
   return (
-    <div>
+    <div className="scroll-smooth">
       <HeadingCategory
         title="Services"
         subtitle="Here are the services I can provide"

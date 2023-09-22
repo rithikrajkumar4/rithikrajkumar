@@ -25,7 +25,7 @@ const Testimonials = () => {
     },
   ];
   return (
-    <div className="mt-40" id="testimonials">
+    <div className="mt-40 scroll-smooth" id="testimonials">
       <HeadingCategory
         title="Testimonials"
         subtitle="Clients I have worked for"
