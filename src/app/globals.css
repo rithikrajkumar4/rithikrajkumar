@@ -23,7 +23,7 @@ body {
   content: "";
   position: absolute;
   width: 20px;
-  background-color: black;
+  background-color: rgba(95, 118, 69, 0.914);
   top: 0;
   bottom: 0;
   left: 50%;
@@ -50,7 +50,7 @@ body {
   height: 25px;
   right: -17px;
   background-color: white;
-  border: 4px solid #ff9f55;
+  border: 4px solid rgb(55, 205, 55);
   top: 15px;
   border-radius: 50%;
   z-index: 1;
@@ -134,7 +134,7 @@ body {
   /* Make sure all circles are at the same spot */
   .left::after,
   .right::after {
-    left: 15px;
+    left: 1px;
   }
 
   /* Make all right containers behave like the left ones */

@@ -1,6 +1,6 @@
 import React from "react";
 import HeadingCategory from "./HeadingCategory";
-import { MdOutlineMiscellaneousServices } from "react-icons/md";
+import { AiFillSetting } from "react-icons/ai";
 import Link from "next/link";
 const Services = () => {
   const services = [
@@ -20,14 +20,11 @@ const Services = () => {
         title="Services"
         subtitle="Here are the services I can provide"
       />
-      <div className="flex gap-10 flex-wrap justify-center items-center mt-4">
+      <div className="flex gap-4 flex-wrap justify-center items-center mt-4">
         {services.map((item, index) => (
-          <div
-            key={index}
-            className="flex p-8 w-auto text-center bg-gray-200 rounded-lg"
-          >
-            <MdOutlineMiscellaneousServices className="md:text-5xl text-4xl text-green-900" />
-            <p className="md:text-4xl text-2xl ml-4 font-mono ">{item}</p>
+          <div key={index} className="flex p-4 md:p-9 bg-gray-300 rounded-xl">
+            <AiFillSetting className="md:text-5xl text-3xl text-center animate-spin text-green-700" />
+            <p className="md:text-4xl text-2xl font-mono ">{item}</p>
           </div>
         ))}
       </div>

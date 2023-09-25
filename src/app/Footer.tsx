@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     <div className="w-full  h-full bg-black text-center scroll-smooth">
       <div className="text-white flex flex-col gap-[100px] items-center pt-20">
-        <div className="flex flex-col-reverse lg:flex-col gap-20 items-center">
+        <div className="flex flex-col gap-20 items-center">
           <h1 className="text-9xl neonText animate-pulse">RR.</h1>
           <div className="flex flex-col gap-10 items-center">
             <h1 className="mb-6 font-sans italic text-4xl">Follow me on!</h1>

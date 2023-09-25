@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <div className="flex justify-evenly text-center mt-4 items-center gap-4">
       <div className="text-4xl font-bold font-mono text-green-400 p-2">
-        <span>🇮🇳</span>RR.
+        <span>🇮🇳</span>RR
       </div>
       <div className="lg:flex gap-12 pt-2 text-xl font-semibold font-mono hidden">
         <div className="hover:bg-green-300 hover:rounded-full cursor-pointer p-2 hover:text-white">
