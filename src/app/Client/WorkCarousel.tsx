@@ -12,7 +12,7 @@ const WorkCarousel = () => {
 
   return (
     <div className="flex justify-center flex-col items-center">
-      <div className="border-4 border-black rounded-xl p-2">
+      <div className="border-4 border-black rounded-xl p-2 m-2">
         <Image
           id="carouselImage"
           alt="workimage"
