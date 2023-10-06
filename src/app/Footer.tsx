@@ -59,7 +59,8 @@ const Footer = () => {
           </div>
         </div>
         <div>
-          <p>&#169;All right are reserved.</p>
+          <p>Feel Free to copy 💝.</p>
+          <p>Made with ❤️ from India.</p>
         </div>
       </div>
     </div>
