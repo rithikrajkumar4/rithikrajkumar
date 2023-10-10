@@ -21,7 +21,7 @@ const Introduction = () => {
         <div className="pt-20 text-center xl:text-left">
           <div className="xl:text-7xl text-5xl  font-bold font-sans">
             <span className="">
-              Hi,I&apos;m
+              Hi, I&apos;m
               <span className=" text-green-400 uppercase ">
                 {" "}
                 Rithik Rajkumar
@@ -33,7 +33,7 @@ const Introduction = () => {
           </div>
           <div className="xl:w-[70%] ">
             <p className="mt-2 text-2xl">
-              I code solutions and design aesthetics that captivate,combining
+              Code solutions and design aesthetics that captivate,combining
               technical prowess with an artistic touch to shape tomorrow&apos;s
               digital landscape.
             </p>

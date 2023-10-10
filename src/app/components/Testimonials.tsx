@@ -20,7 +20,7 @@ const Testimonials = () => {
     {
       company: "Personal Portofolio",
       remark:
-        "I wholeheartedly recommend Rithik to anyone in need of top-notch freelancing service. He is truely talentented, and I look forward to working together on future projects. Thanks to him, my project exceeded my expectations!",
+        "I wholeheartedly recommend Rithik to anyone in need of top-notch freelancing service. He is truely talented, and I look forward to working together on future projects. Thanks to him, my project exceeded my expectations!",
       desgination: "Anonymous Client",
     },
   ];
