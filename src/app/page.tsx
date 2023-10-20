@@ -3,8 +3,9 @@ import Footer from "./Footer";
 import Introduction from "./components/Introduction";
 import Services from "./components/Services";
 import Portfolios from "./components/Portfolios";
-import Projects from "./components/Testimonials";
 import Work from "./components/Work";
+import Testimonials from "./components/Testimonials";
+import ContantForm from "./components/ContantForm";
 
 export default function Home() {
   return (
@@ -14,7 +15,8 @@ export default function Home() {
       <Services />
       <Portfolios />
       <Work />
-      <Projects />
+      <Testimonials />
+      <ContantForm />
       <Footer />
     </div>
   );
