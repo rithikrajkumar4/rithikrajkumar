@@ -6,15 +6,15 @@ const ContantForm = () => {
     <div className="flex justify-center bg-grey-600 pt-10">
       <div className="flex flex-col">
         <div className="flex justify-center text-center">
-          <HeadingCategory title="Hello" subtitle="Throw Me a Challenge" />
+          <HeadingCategory title="Hello" subtitle="Throw me a challenge" />
         </div>
         <div>
-          <form action="">
-            <div className="flex flex-col gap-10">
-              <label htmlFor="Name" className="flex flex-col gap-3">
-                Name:
+          <form action="no-action" method="post">
+            <div className="flex flex-col gap-10 font-serif text-2xl">
+              <label htmlFor="Name" className="flex flex-col gap-3 ">
+                <p className="font-bold">Name:</p>
                 <input
-                  className=" border-spacing-5 p-2"
+                  className=" border-spacing-5 p-2 bg-white"
                   type="text"
                   name="name"
                   id="name"
@@ -22,7 +22,7 @@ const ContantForm = () => {
                 />
               </label>
               <label htmlFor="Email" className="flex flex-col gap-3">
-                Email:
+                <p className="font-bold">Email:</p>
                 <input
                   className=" border-spacing-5 p-2"
                   type="email"
@@ -32,7 +32,7 @@ const ContantForm = () => {
                 />
               </label>
               <label htmlFor="phone" className="flex flex-col gap-3">
-                Phone:
+                <p className="font-bold">Phone No.:</p>
                 <input
                   className=" border-spacing-5 p-2"
                   type="tel"
@@ -40,9 +40,9 @@ const ContantForm = () => {
                 />
               </label>
               <label htmlFor="Message" className="flex flex-col gap-3">
-                Message:
+                <p className="font-bold">Message:</p>
                 <input
-                  className=" border-spacing-5 p-4"
+                  className=" border-spacing-5 p-8"
                   type="text"
                   name="message"
                   id="message"
@@ -51,7 +51,7 @@ const ContantForm = () => {
               </label>
               <button
                 type="submit"
-                className="text-center text-white font-bold text-2xl xl:text-4xl p-4 bg-black m-4"
+                className="text-center text-white font-bold text-2xl xl:text-4xl p-4 bg-black m-4 rounded-full hover:text-green-300"
               >
                 Challenged!
               </button>
