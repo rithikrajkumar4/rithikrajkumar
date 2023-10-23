@@ -24,11 +24,11 @@ const Introduction = () => {
               Hi, I&apos;m
               <span className=" text-green-400 uppercase ">
                 {" "}
-                Rithik Rajkumar Goyal
+                Rithik Rajkumar
               </span>
               ,{" "}
             </span>
-            Full-Stack Developer &
+            <br /> Full-Stack Developer &
             <br /> Creative Designer.
           </div>
           <div className="xl:w-[70%] ">
