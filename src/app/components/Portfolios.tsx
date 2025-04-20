@@ -31,123 +31,234 @@ const Portfolios = () => {
         title="Portfolio"
         subtitle="This is my personal portfolio"
       />
-      <div className="flex flex-col items-center justify-center">
-        <h1 className=" capitalize lg:w-[60%] p-2 font-sans text-2xl lg:text-3xl text-center font-semibold tracking-widest">
-          <span className="text-4xl">🙏🏻</span>,I am a programming enthusiast and
-          a Computer Science Engineering graduate in 2023. I have year of
-          experience in the web development field.Open to learn new technologies
-          and to be up to date with my tech stack. I&apos;m a full-stack
-          developer with experience in various frontend/backend frameworks.
-        </h1>
-        <p className="text-xl lg:text-2xl p-2 text-center capitalize font-mono lg:w-[60%]">
-          Also,I binge watch anime 👒⚔🏴‍☠️🌊, music 💇🏿‍♂️ﾒ𝟶,love to play Chess ♟,like
-          Moto Riding 🏍🏁,Travelling 🧳✈🌎 and ❤︎Eating a lot of food 🧃🤤🍕🍔.
-        </p>
+
+      <div className="flex flex-col items-center justify-center p-8">
+        <div className="max-w-4xl w-full">
+          <div className="bg-gradient-to-br from-gray-900 to-gray-800 rounded-2xl p-8 shadow-xl transform transition-all duration-500 hover:scale-[1.02]">
+            <h1 className="capitalize text-2xl lg:text-3xl font-sans text-center font-semibold tracking-widest mb-6">
+              <span className="text-4xl animate-bounce">🙏🏻</span>
+              <span className="bg-gradient-to-r from-[#34d399] to-[#3b82f6] text-transparent bg-clip-text animate-gradient">
+                I am a programming enthusiast and a Computer Science Engineering
+                graduate in 2023. I have year of experience in the web
+                development field. Open to learn new technologies and to be up
+                to date with my tech stack. I&apos;m a full-stack developer with
+                experience in various frontend/backend frameworks.
+              </span>
+            </h1>
+            <p className="text-xl lg:text-2xl p-4 text-center capitalize font-mono bg-gradient-to-r from-[#34d399] via-[#3b82f6] to-[#34d399] text-transparent bg-clip-text animate-gradient">
+              Also, I binge watch anime{" "}
+              <span className="text-[#34d399]">👒</span>
+              <span className="text-[#3b82f6]">⚔</span>
+              <span className="text-[#34d399]">🏴‍☠️</span>
+              <span className="text-[#3b82f6]">🌊</span>, music{" "}
+              <span className="text-[#34d399]">💇🏿‍♂️</span>
+              <span className="text-[#3b82f6]">ﾒ𝟶</span>, love to play Chess
+              <span className="text-[#34d399]">♟</span>, like Moto Riding{" "}
+              <span className="text-[#3b82f6]">🏍</span>
+              <span className="text-[#34d399]">🏁</span>, Travelling{" "}
+              <span className="text-[#3b82f6]">🧳</span>
+              <span className="text-[#34d399]">✈</span>
+              <span className="text-[#3b82f6]">🌎</span> and{" "}
+              <span className="text-[#34d399]">❤︎</span>Eating a lot of food{" "}
+              <span className="text-[#34d399]">🧃</span>
+              <span className="text-[#3b82f6]">🤤</span>
+              <span className="text-[#34d399]">🍕</span>
+              <span className="text-[#3b82f6]">🍔</span>.
+            </p>
+          </div>
+        </div>
       </div>
-      <div className="timeline p-4">
-        <div className="container left rounded-xl">
-          <div className="content">
-            <h2 className="text-bold text-2xl font-mono">2022-Present</h2>
-            <h3 className="font-sans text-3xl italic">Freelancer</h3>
+
+      <div className="timeline p-8">
+        <div className="container left rounded-2xl transform transition-all duration-500 hover:scale-[1.02]">
+          <div className="content bg-gradient-to-br from-gray-900 to-gray-800 p-6 rounded-2xl shadow-xl">
+            <h2 className="text-bold text-2xl font-mono text-gray-800">
+              2023-Present
+            </h2>
+            <h3 className="font-sans text-3xl italic text-[#3b82f6]">
+              Software Developer
+            </h3>
+            <h3 className="text-2xl font-serif text-[#34d399]">
+              In Innovative codelabs pvt. ltd.
+            </h3>
           </div>
         </div>
-        <div className="container right rounded-xl">
-          <div className="content ">
-            <h2 className="text-bold text-2xl font-mono">2021-2022</h2>
-            <h3 className="font-sans text-3xl italic">Web Developer</h3>
-            <h3 className="text-2xl font-serif">In Help by Tech pvt. ltd.</h3>
+        <div className="container right rounded-2xl transform transition-all duration-500 hover:scale-[1.02]">
+          <div className="content bg-gradient-to-br from-gray-900 to-gray-800 p-6 rounded-2xl shadow-xl">
+            <h2 className="text-bold text-2xl font-mono text-gray-800">
+              2022-2023
+            </h2>
+            <h3 className="font-sans text-3xl italic text-[#3b82f6]">
+              Web Developer
+            </h3>
+            <h3 className="text-2xl font-serif text-[#34d399]">
+              In Help by Tech pvt. ltd.
+            </h3>
           </div>
         </div>
-        <div className="container left rounded-xl">
-          <div className="content ">
-            <h2 className="text-bold text-2xl font-mono">2019-2023</h2>
-            <h3 className="text-2xl font-serif font-semibold">
+        <div className="container left rounded-2xl transform transition-all duration-500 hover:scale-[1.02]">
+          <div className="content bg-gradient-to-br from-gray-900 to-gray-800 p-6 rounded-2xl shadow-xl">
+            <h2 className="text-bold text-2xl font-mono text-gray-800">
+              2019-2023
+            </h2>
+            <h3 className="text-2xl font-serif font-semibold text-[#3b82f6]">
               College Of Engineering, Roorkee
             </h3>
-            <h3 className="text-2xl font-serif">
+            <h3 className="text-2xl font-serif text-[#34d399]">
               B.tech Computer Science Engineering
             </h3>
           </div>
         </div>
-        <div className="container right rounded-xl">
-          <div className="content ">
-            <h2 className="text-bold text-2xl font-mono">2019</h2>
-            <h3 className="text-2xl font-serif font-semibold">
+        <div className="container right rounded-2xl transform transition-all duration-500 hover:scale-[1.02]">
+          <div className="content bg-gradient-to-br from-gray-900 to-gray-800 p-6 rounded-2xl shadow-xl">
+            <h2 className="text-bold text-2xl font-mono text-gray-800">2019</h2>
+            <h3 className="text-2xl font-serif font-semibold text-[#3b82f6]">
               St.George&apos;s School, New Delhi
             </h3>
-            <h3 className="text-2xl font-serif">Nursery-12th</h3>
+            <h3 className="text-2xl font-serif text-[#34d399]">Nursery-12th</h3>
           </div>
         </div>
       </div>
-      <div className="flex flex-col items-center justify-center">
-        <p className="mt-10 font-sans text-2xl font-bold">Want to Hire me?</p>
+
+      <div className="flex flex-col items-center justify-center p-8">
+        <p className="mt-10 font-sans text-2xl font-bold text-gray-800">
+          Exploring new opportunities!
+        </p>
         <Link
-          className="border-4 hover:bg-green-500 hover:text-white border-green-500 p-4 rounded-full text-green-700 m-4 text-center font-medium text-2xl"
-          href={
-            "https://drive.google.com/file/d/1cqhZkYnKMYU2_LND83aop5l6bh6Crz_M/view?usp=sharing"
-          }
+          className="border-4 p-4 rounded-full m-4 text-center font-medium text-2xl transition-all duration-300 bg-gradient-to-r from-[#34d399] to-[#3b82f6] text-white hover:from-[#3b82f6] hover:to-[#34d399] transform hover:scale-105"
+          href={"https://salmon-libby-86.tiiny.site"}
           target="_blank"
         >
           My Resume Link
         </Link>
       </div>
-      <div className="flex justify-center mt-20 p-10 md:gap-[100px] gap-[50px] md:text-[140px] text-8xl flex-wrap">
-        <SiCplusplus className="text-blue-500 hover:scale-125" />
-        <FaHtml5 className="text-orange-500 hover:scale-125" />
-        <FaCss3 className="text-blue-500 hover:scale-125" />
-        <TbBrandJavascript className="text-yellow-300 hover:scale-125" />
-        <FaReact className="text-[#61dbfb] hover:scale-125 animate-spin" />
-        <TbBrandNextjs className="hover:scale-125" />
-        <TbBrandNodejs className="text-[#659a60] hover:scale-125" />
-        <SiTailwindcss className="text-[#00b6d7] hover:scale-125" />
-        <SiFlutter className="text-[#00b6e9] hover:scale-125" />
-        <GrMysql className="text-[#50809f] hover:scale-125" />
-        <SiMongodb className="text-[#00ee64] hover:scale-125" />
-        <SiFirebase className="text-[#ffa610] hover:scale-125" />
+
+      <div className="flex justify-center mt-20 p-8 gap-8 flex-wrap">
+        {[
+          {
+            icon: (
+              <SiCplusplus className="text-blue-500 text-6xl transform transition-all duration-300 hover:scale-125" />
+            ),
+            name: "C++",
+          },
+          {
+            icon: (
+              <FaHtml5 className="text-orange-500 text-6xl transform transition-all duration-300 hover:scale-125" />
+            ),
+            name: "HTML5",
+          },
+          {
+            icon: (
+              <FaCss3 className="text-blue-500 text-6xl transform transition-all duration-300 hover:scale-125" />
+            ),
+            name: "CSS3",
+          },
+          {
+            icon: (
+              <TbBrandJavascript className="text-yellow-300 text-6xl transform transition-all duration-300 hover:scale-125" />
+            ),
+            name: "JavaScript",
+          },
+          {
+            icon: (
+              <FaReact className="text-[#61dbfb] text-6xl transform transition-all duration-300 hover:scale-125 animate-spin" />
+            ),
+            name: "React",
+          },
+          {
+            icon: (
+              <TbBrandNextjs className="text-white text-6xl transform transition-all duration-300 hover:scale-125" />
+            ),
+            name: "Next.js",
+          },
+          {
+            icon: (
+              <TbBrandNodejs className="text-[#659a60] text-6xl transform transition-all duration-300 hover:scale-125" />
+            ),
+            name: "Node.js",
+          },
+          {
+            icon: (
+              <SiTailwindcss className="text-[#00b6d7] text-6xl transform transition-all duration-300 hover:scale-125" />
+            ),
+            name: "Tailwind",
+          },
+          {
+            icon: (
+              <SiFlutter className="text-[#00b6e9] text-6xl transform transition-all duration-300 hover:scale-125" />
+            ),
+            name: "Flutter",
+          },
+          {
+            icon: (
+              <GrMysql className="text-[#50809f] text-6xl transform transition-all duration-300 hover:scale-125" />
+            ),
+            name: "MySQL",
+          },
+          {
+            icon: (
+              <SiMongodb className="text-[#00ee64] text-6xl transform transition-all duration-300 hover:scale-125" />
+            ),
+            name: "MongoDB",
+          },
+          {
+            icon: (
+              <SiFirebase className="text-[#ffa610] text-6xl transform transition-all duration-300 hover:scale-125" />
+            ),
+            name: "Firebase",
+          },
+        ].map((item, index) => (
+          <div key={index} className="flex flex-col items-center group">
+            {item.icon}
+            <span className="mt-2 text-gray-300 group-hover:text-white transition-colors duration-300">
+              {item.name}
+            </span>
+          </div>
+        ))}
       </div>
 
-      <div className="flex flex-col items-center mt-20 text-center">
-        <h1 className="font-bold md:text-4xl text-2xl font-mono underline">
+      <div className="flex flex-col items-center mt-20 p-8">
+        <h1 className="font-bold md:text-4xl text-2xl font-mono text-gray-800">
           Check out my Profile at:
         </h1>
-        <div className="font-sans text-center flex flex-col items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
           <Link
             href={"https://github.com/rithikrajkumar4"}
             target="_blank"
-            className="flex m-4"
+            className="flex items-center justify-center p-6 bg-gradient-to-br from-gray-900 to-gray-800 rounded-2xl shadow-xl transform transition-all duration-500 hover:scale-[1.02] group"
           >
-            <FaGithub className="md:text-7xl text-5xl" />
-            <span className="md:text-3xl text-2xl p-4 hover:text-blue-500">
+            <FaGithub className="text-5xl text-white group-hover:text-[#34d399] transition-colors duration-300" />
+            <span className="ml-4 text-xl text-white group-hover:text-[#34d399] transition-colors duration-300">
               Github/RithikRajkumar
             </span>
           </Link>
           <Link
             href={"https://www.linkedin.com/in/rrk4/"}
             target="_blank"
-            className="flex m-4"
+            className="flex items-center justify-center p-6 bg-gradient-to-br from-gray-900 to-gray-800 rounded-2xl shadow-xl transform transition-all duration-500 hover:scale-[1.02] group"
           >
-            <FaLinkedin className="md:text-7xl text-5xl text-[#0a66c2]" />
-            <span className="md:text-3xl text-2xl p-4 hover:text-blue-500 ">
+            <FaLinkedin className="text-5xl text-[#0a66c2] group-hover:text-[#34d399] transition-colors duration-300" />
+            <span className="ml-4 text-xl text-white group-hover:text-[#34d399] transition-colors duration-300">
               Linkedin/RithikRajkumar
             </span>
           </Link>
           <Link
             href={"https://www.hackerrank.com/xaviorpaul9"}
             target="_blank"
-            className="flex"
+            className="flex items-center justify-center p-6 bg-gradient-to-br from-gray-900 to-gray-800 rounded-2xl shadow-xl transform transition-all duration-500 hover:scale-[1.02] group"
           >
-            <FaHackerrank className="md:text-7xl text-5xl text-[#34c366]" />
-            <span className="md:text-3xl text-2xl p-4 hover:text-blue-500">
+            <FaHackerrank className="text-5xl text-[#34c366] group-hover:text-[#34d399] transition-colors duration-300" />
+            <span className="ml-4 text-xl text-white group-hover:text-[#34d399] transition-colors duration-300">
               HackerRank/RithikRajkumar
             </span>
           </Link>
           <Link
             href={"https://leetcode.com/xaviorpaul9/"}
             target="_blank"
-            className="flex m-4"
+            className="flex items-center justify-center p-6 bg-gradient-to-br from-gray-900 to-gray-800 rounded-2xl shadow-xl transform transition-all duration-500 hover:scale-[1.02] group"
           >
-            <SiLeetcode className="md:text-7xl text-5xl text-[#ffa610]" />
-            <span className="md:text-3xl text-2xl p-4 hover:text-blue-500">
+            <SiLeetcode className="text-5xl text-[#ffa610] group-hover:text-[#34d399] transition-colors duration-300" />
+            <span className="ml-4 text-xl text-white group-hover:text-[#34d399] transition-colors duration-300">
               Leetcode/RithikRajkumar
             </span>
           </Link>
