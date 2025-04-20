@@ -2,13 +2,17 @@ import React from "react";
 
 const TextCarousel = ({ title }: { title: string }) => {
   return (
-    <div className="my-[100px] text-9xl font-sans font-bold flex text-green-600 scroll-smooth">
+    <div className="my-[100px] text-9xl font-sans font-bold flex scroll-smooth">
       <div className="rra-w">
         <div className="rra">
-          <span>{title}&nbsp;</span>
+          <span className="bg-gradient-to-r from-green-400 to-blue-500 text-transparent bg-clip-text">
+            {title}&nbsp;
+          </span>
         </div>
         <div className="rra rra2">
-          <span>{title}&nbsp;&nbsp;</span>
+          <span className="bg-gradient-to-r from-green-400 to-blue-500 text-transparent bg-clip-text">
+            {title}&nbsp;&nbsp;
+          </span>
         </div>
       </div>
     </div>

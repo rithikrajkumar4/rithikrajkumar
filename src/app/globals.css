@@ -2,13 +2,39 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  font-family: Helvetica, sans-serif;
+  min-height: 100vh;
+  background: linear-gradient(
+    to bottom right,
+    rgba(52, 211, 153, 0.1),
+    rgba(59, 130, 246, 0.1)
+  );
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #34d399, #3b82f6);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to bottom, #3b82f6, #34d399);
+}
+
 /* timeline css */
 * {
   box-sizing: border-box;
-}
-
-body {
-  font-family: Helvetica, sans-serif;
 }
 
 /* The actual timeline (the vertical ruler) */
@@ -16,44 +42,63 @@ body {
   position: relative;
   max-width: 1200px;
   margin: 0 auto;
+  padding: 20px 0;
 }
 
 /* The actual timeline (the vertical ruler) */
 .timeline::after {
   content: "";
   position: absolute;
-  width: 20px;
-  background-color: rgba(95, 118, 69, 0.914);
+  width: 6px;
+  background: linear-gradient(to bottom, #34d399, #3b82f6);
   top: 0;
   bottom: 0;
   left: 50%;
   margin-left: -3px;
+  border-radius: 3px;
+  box-shadow: 0 0 10px rgba(52, 211, 153, 0.5);
 }
 
 /* Container around content */
 .container {
   padding: 10px 40px;
   position: relative;
-  background-color: gray;
+  background: linear-gradient(
+    to bottom right,
+    rgba(52, 211, 153, 0.05),
+    rgba(59, 130, 246, 0.05)
+  );
+  backdrop-filter: blur(8px);
   width: 50%;
+  border: 1px solid rgba(52, 211, 153, 0.1);
+  border-radius: 15px;
+  transition: all 0.3s ease;
 }
-.neonText {
-  color: #fff;
-  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa,
-    0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
+
+.container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(52, 211, 153, 0.1);
 }
+
 /* The circles on the timeline */
 .container::after {
   content: "";
   position: absolute;
-  width: 25px;
-  height: 25px;
+  width: 30px;
+  height: 30px;
   right: -17px;
   background-color: white;
-  border: 4px solid rgb(55, 205, 55);
+  border: 4px solid #34d399;
   top: 15px;
   border-radius: 50%;
   z-index: 1;
+  box-shadow: 0 0 10px rgba(52, 211, 153, 0.5);
+  transition: all 0.3s ease;
+}
+
+.container:hover::after {
+  transform: scale(1.2);
+  box-shadow: 0 0 20px rgba(52, 211, 153, 0.8);
 }
 
 /* Place the container to the left */
@@ -75,9 +120,10 @@ body {
   width: 0;
   z-index: 1;
   right: 30px;
-  border: medium solid white;
+  border: medium solid rgba(52, 211, 153, 0.2);
   border-width: 10px 0 10px 10px;
-  border-color: transparent transparent transparent white;
+  border-color: transparent transparent transparent rgba(52, 211, 153, 0.2);
+  transition: all 0.3s ease;
 }
 
 /* Add arrows to the right container (pointing left) */
@@ -89,31 +135,44 @@ body {
   width: 0;
   z-index: 1;
   left: 30px;
-  border: medium solid white;
+  border: medium solid rgba(52, 211, 153, 0.2);
   border-width: 10px 10px 10px 0;
-  border-color: transparent white transparent transparent;
+  border-color: transparent rgba(52, 211, 153, 0.2) transparent transparent;
+  transition: all 0.3s ease;
 }
 
 /* Fix the circle for containers on the right side */
 .right::after {
-  left: -4px;
+  left: -16px;
 }
 
 /* The actual content */
 .content {
   padding: 20px 30px;
-  background-color: white;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(8px);
   position: relative;
-  border-radius: 6px;
+  border-radius: 12px;
+  border: 1px solid rgba(52, 211, 153, 0.2);
+  box-shadow: 0 4px 6px -1px rgba(59, 130, 246, 0.1),
+    0 2px 4px -1px rgba(52, 211, 153, 0.06);
+  transition: all 0.3s ease;
 }
+
+.content:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(52, 211, 153, 0.2);
+}
+
 .blob {
   border-radius: 70% 30% 30% 70% / 60% 40% 60% 40%;
 }
+
 /* Media queries - Responsive timeline on screens less than 600px wide */
 @media screen and (max-width: 600px) {
-  /* Place the timelime to the left */
+  /* Place the timeline to the left */
   .timeline::after {
-    left: 21px;
+    left: 31px;
   }
 
   /* Full-width containers */
@@ -126,15 +185,15 @@ body {
   /* Make sure that all arrows are pointing leftwards */
   .container::before {
     left: 60px;
-    border: medium solid white;
+    border: medium solid rgba(52, 211, 153, 0.2);
     border-width: 10px 10px 10px 0;
-    border-color: transparent white transparent transparent;
+    border-color: transparent rgba(52, 211, 153, 0.2) transparent transparent;
   }
 
   /* Make sure all circles are at the same spot */
   .left::after,
   .right::after {
-    left: 1px;
+    left: 15px;
   }
 
   /* Make all right containers behave like the left ones */
@@ -144,10 +203,22 @@ body {
 }
 
 u {
-  text-decoration-color: greenyellow;
-  text-decoration-thickness: 15px;
-  text-decoration-style: unset;
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
 }
+
+u::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  bottom: -4px;
+  left: 0;
+  background: linear-gradient(to right, #34d399, #3b82f6);
+  border-radius: 2px;
+}
+
 .rra-w {
   position: relative;
   display: block;
@@ -158,6 +229,7 @@ u {
   transform: translate(-50%, -50%);
   overflow: hidden;
 }
+
 .rra {
   position: absolute;
   display: block;
@@ -166,6 +238,7 @@ u {
   /* overflow: hidden; */
   min-width: 100%;
 }
+
 .rra span {
   display: inline-block;
   padding-left: 100%;
@@ -175,14 +248,52 @@ u {
   /* line-height: 1px; */
   animation: rra 8s linear infinite;
 }
+
 .rra2 span {
   animation-delay: 4s;
 }
+
 @keyframes rra {
   0% {
     transform: translate(0, 0);
   }
   100% {
     transform: translate(-100%, 0);
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animate-gradient {
+  background-size: 200% auto;
+  animation: gradient 3s linear infinite;
+}
+
+/* Neon Text Effect */
+.neonText {
+  color: #fff;
+  text-shadow: 0 0 5px #2563eb, 0 0 10px #2563eb, 0 0 20px #2563eb,
+    0 0 40px #2563eb;
+  animation: neonPulse 2s infinite alternate;
+}
+
+@keyframes neonPulse {
+  from {
+    text-shadow: 0 0 5px #2563eb, 0 0 10px #2563eb, 0 0 20px #2563eb,
+      0 0 40px #2563eb;
+  }
+  to {
+    text-shadow: 0 0 10px #2563eb, 0 0 20px #2563eb, 0 0 30px #2563eb,
+      0 0 50px #2563eb;
   }
 }
