@@ -278,3 +278,22 @@ u::after {
   background-size: 200% auto;
   animation: gradient 3s linear infinite;
 }
+
+/* Neon Text Effect */
+.neonText {
+  color: #fff;
+  text-shadow: 0 0 5px #2563eb, 0 0 10px #2563eb, 0 0 20px #2563eb,
+    0 0 40px #2563eb;
+  animation: neonPulse 2s infinite alternate;
+}
+
+@keyframes neonPulse {
+  from {
+    text-shadow: 0 0 5px #2563eb, 0 0 10px #2563eb, 0 0 20px #2563eb,
+      0 0 40px #2563eb;
+  }
+  to {
+    text-shadow: 0 0 10px #2563eb, 0 0 20px #2563eb, 0 0 30px #2563eb,
+      0 0 50px #2563eb;
+  }
+}

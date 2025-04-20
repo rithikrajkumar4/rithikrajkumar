@@ -210,7 +210,7 @@ const Portfolios = () => {
         ].map((item, index) => (
           <div key={index} className="flex flex-col items-center group">
             {item.icon}
-            <span className="mt-2 text-gray-300 group-hover:text-white transition-colors duration-300">
+            <span className="mt-2 text-gray-900 group-hover:text-black transition-colors duration-300">
               {item.name}
             </span>
           </div>
