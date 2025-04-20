@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
@@ -6,12 +8,12 @@ import TextCarousel from "./TextCarousel";
 const Introduction = () => {
   return (
     <div>
-      <div className="w-full h-full  xl:flex xl:flex-row-reverse justify-center xl:p-20 mb-20 scroll-smooth">
+      <div className="w-full h-full xl:flex xl:flex-row-reverse justify-center xl:p-20 mb-20 scroll-smooth">
         <div className="flex justify-center pt-10 xl:pt-0">
-          <div className="w-[600px] h-[600px] md:h-[700px] mt-20 xl:mt-0 blob bg-gradient-to-r from-blue-900 via-gray-800 to-indigo-900 overflow-hidden bg-center ">
+          <div className="w-[600px] h-[600px] md:h-[700px] mt-20 xl:mt-0 blob bg-gradient-to-r from-blue-900 via-gray-800 to-indigo-900 overflow-hidden bg-center">
             <Image
-              className=" scale-150 ml-8 mt-20 rotate-2 shadow-xl"
-              src={"/rrk1.png"}
+              className="scale-150 ml-8 mt-20 rotate-2 shadow-xl"
+              src="/rrk1.png"
               width={700}
               height={800}
               alt="my image"
@@ -30,7 +32,7 @@ const Introduction = () => {
           />
         </div>
         <div className="pt-20 text-center xl:text-left">
-          <div className="xl:text-7xl text-5xl  font-bold font-sans">
+          <div className="xl:text-7xl text-5xl font-bold font-sans">
             <span className="">
               Hi, I&apos;m
               <span className="text-[#4299e1] uppercase"> Rithik Rajkumar</span>
@@ -38,7 +40,7 @@ const Introduction = () => {
             </span>
             <br />
             <div className="marquee-container mt-4">
-              <span className="marquee text-3xl font-mono">
+              <span className="marquee text-3xl font-sans font-medium tracking-wide">
                 🚀 Backend Developer • ⚡ API Architect • 🔧 System Designer •
                 💾 Database Expert • ☁️ Cloud Engineer • 🛠️ DevOps Enthusiast •
                 🔐 Security Focused • 🎯 Problem Solver
