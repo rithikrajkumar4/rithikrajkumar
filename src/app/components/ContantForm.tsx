@@ -73,7 +73,7 @@ const ContantForm = () => {
 
         {showSuccess && (
           <div className="mb-8 p-4 bg-green-500/20 border border-green-500 rounded-xl text-green-500 text-center">
-            Message sent successfully! I'll get back to you soon. 🚀
+            Message sent successfully! I&apos;ll get back to you soon. 🚀
           </div>
         )}
 
